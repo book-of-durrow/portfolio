@@ -291,7 +291,6 @@ footer {
     }
     
     nav a {
-        display: block;
         margin: 10px 0;
     }
 
@@ -317,5 +316,13 @@ footer {
     .work-title {
         flex: 0 0 50%;
         font-size: 1em;
+    }
+
+    .work-title:after {
+        height: 0px;
+    }
+
+    .work-description-text {
+        display: none;
     }
 }
