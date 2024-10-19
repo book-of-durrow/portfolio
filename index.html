@@ -1,63 +1,41 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - miton</title>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <h1 class="english">Portfolio</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="Works.html">Works</a>
-                <a href="Profile.html">Profile</a>
-                <a href="Links.html">Links</a>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>タロットカード</h2>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_00_The_Fool.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_01_The_Magician.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_02_The_High_Priestess_blue.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_03_The_Empress.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_04_The_Emperor.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_05_The_Hierophant.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_06_The_Lovers_High.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_07_The_Chariot.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/Tarot_08_Strength.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
-                    </div>
-                </div>
-            </section>
-            <div class="modal" id="modal">
-                <span class="close" id="close">&times;</span>
-                <img class="modal-content" id="modalImg" alt="拡大画像">
-            </div>
-            <footer>
-                <p>2024 miton's portfolio</p>
-            </footer>
-            <script src="script/modal-window.js"></script>
-        </main>
-    </body>
-</html>
+---
+layout: default
+title: Home
+---
+<section>
+    <h2>タロットカード</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="assets/Tarot_00_The_Fool.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_01_The_Magician.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_02_The_High_Priestess_blue.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_03_The_Empress.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_04_The_Emperor.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_05_The_Hierophant.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_06_The_Lovers_High.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_07_The_Chariot.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/Tarot_08_Strength.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+        </div>
+    </div>
+</section>
+<div class="modal" id="modal">
+    <span class="close" id="close">&times;</span>
+    <img class="modal-content" id="modalImg" alt="拡大画像">
+</div>
+<script src="script/modal-window.js"></script>
