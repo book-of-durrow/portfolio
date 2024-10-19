@@ -151,13 +151,20 @@ main {
     padding: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .work-card:hover {
     transform: scale(1.01);
 }
 
+.work-thumbnail {
+    flex: 0 0 30%;
+    padding: 10px;
+}
+
 .work-title {
+    flex: 1;
     padding: 10px;
     font-size: 1.2em;
     text-align: center;
