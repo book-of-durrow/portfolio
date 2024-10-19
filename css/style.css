@@ -151,7 +151,7 @@ main {
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .work-card:hover {
@@ -160,7 +160,12 @@ main {
 
 .work-thumbnail {
     flex: 0 0 30%;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-thumbnail img {
+    height: 280px;
 }
 
 .work-title {
@@ -275,5 +280,21 @@ footer {
 
     .work-card {
         height: 200px;
+    }
+
+    .work-thumbnail {
+        flex: 0 0 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .work-thumbnail img {
+        height: 190px;
+    }
+
+    .work-title {
+        flex: 0 0 60%;
+        padding: 10px;
+        font-size: 0.8em;
     }
 }
