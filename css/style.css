@@ -172,6 +172,7 @@ main {
     flex-direction: column;
     height: 100%;
     align-items: flex-start;
+    margin-right: 16px;
 }
 
 .work-title {
@@ -182,9 +183,22 @@ main {
     margin: 0;
 }
 
+.work-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, #aaa, #aaa, transparent);
+    margin-bottom: 15px;
+}
+
 .work-title h2 {
     position: absolute;
     bottom: 0;
+    border-bottom: none;
+    margin-bottom: 5px;
 }
 
 .work-description-text {
@@ -267,7 +281,7 @@ footer {
     padding-top: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     body {
         padding: 10px;
     }
@@ -294,5 +308,14 @@ footer {
 
     .social-card i {
         font-size: 24px;
+    }
+
+    .work-card {
+        height: 200px;
+    }
+
+    .work-title {
+        flex: 0 0 50%;
+        font-size: 1em;
     }
 }
