@@ -138,7 +138,6 @@ main {
 }
 
 .work-card {
-    display: flex;
     width: 100%;
     max-width: 800px;
     height: 300px;
@@ -155,15 +154,6 @@ main {
 
 .work-card:hover {
     transform: scale(1.01);
-}
-.work-thumbnail {
-    padding: 10px;
-}
-
-.work-thumbnail img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .work-title {
