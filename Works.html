@@ -6,9 +6,9 @@ title: Works
 <div class="works-gallery">
     {% for post in site.posts %}
         {% if post.categories contains "works" %}
-            <a href="{{ post.url }}" class="work-card">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="work-card">
                 <div class="work-thumbnail">
-                    <img src="{{ post.image }}" alt="{{ post.title }}">
+                    <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
                 </div>
                 <div class="work-description">
                     <div class="work-title">
