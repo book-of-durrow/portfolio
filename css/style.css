@@ -164,7 +164,7 @@ main {
 }
 
 .work-title {
-    flex: 1;
+    flex: 0 0 60%;
     padding: 10px;
     font-size: 1.2em;
     text-align: center;
