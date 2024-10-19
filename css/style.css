@@ -149,6 +149,7 @@ main {
     color: #ccc;
     text-decoration: none;
     padding: 10px;
+    display: flex;
     align-items: center;
 }
 
