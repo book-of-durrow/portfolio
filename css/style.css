@@ -157,7 +157,6 @@ main {
     transform: scale(1.01);
 }
 .work-thumbnail {
-    flex: 0 0 30%;
     padding: 10px;
 }
 
@@ -168,7 +167,6 @@ main {
 }
 
 .work-title {
-    flex: 1;
     padding: 10px;
     font-size: 1.2em;
     text-align: center;
