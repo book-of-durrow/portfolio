@@ -145,67 +145,33 @@ main {
     text-align: center;
     border: 1px solid #aaa;
     border-radius: 8px;
-    overflow: visible;
+    overflow: hidden;
     transition: transform 0.2s;
     color: #ccc;
     text-decoration: none;
     padding: 10px;
+    align-items: center;
 }
 
 .work-card:hover {
     transform: scale(1.01);
 }
-
 .work-thumbnail {
     flex: 0 0 30%;
-    margin: 0;
-    margin-right: 16px;
+    padding: 10px;
 }
 
 .work-thumbnail img {
     height: 100%;
-    width: auto;
-    margin: 0;
-}
-
-.work-description {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: flex-start;
-    margin-right: 16px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .work-title {
-    position: relative;
-    flex: 0 0 40%;
-    font-size: 1.5em;
-    width: 100%;
-    margin: 0;
-}
-
-.work-title:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(to right, #aaa, #aaa, transparent);
-    margin-bottom: 15px;
-}
-
-.work-title h2 {
-    position: absolute;
-    bottom: 0;
-    border-bottom: none;
-    margin-bottom: 5px;
-}
-
-.work-description-text {
     flex: 1;
-    margin-top: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .modal {
@@ -313,38 +279,5 @@ footer {
 
     .work-card {
         height: 200px;
-    }
-
-    .work-thumbnail {
-        flex: 0 0 25%;
-        margin-right: 12px;
-        margin: 0 auto;
-    }
-
-    .work-thumbnail img {
-        height: 100%;
-        width: auto;
-        margin: 0;
-    }
-
-    .work-title {
-        flex: 0 0 100%;
-        font-size: 1em;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .work-title:after {
-        height: 0px;
-    }
-
-    .work-title h2 {
-        position: relative;
-        border-bottom: none;
-        margin-bottom: 5px;
-    }
-
-    .work-description-text {
-        display: none;
     }
 }
