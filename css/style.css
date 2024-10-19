@@ -145,7 +145,7 @@ main {
     text-align: center;
     border: 1px solid #aaa;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: visible;
     transition: transform 0.2s;
     color: #ccc;
     text-decoration: none;
@@ -313,13 +313,30 @@ footer {
         height: 200px;
     }
 
+    .work-thumbnail {
+        flex: 0 0 25%;
+        margin-right: 12px;
+    }
+
+    .work-thumbnail img {
+        height: 100%;
+        width: auto;
+    }
+
     .work-title {
-        flex: 0 0 50%;
+        flex: 0 0 100%;
         font-size: 1em;
+        justify-content: center;
     }
 
     .work-title:after {
         height: 0px;
+    }
+
+    .work-title h2 {
+        position: relative;
+        border-bottom: none;
+        margin-bottom: 5px;
     }
 
     .work-description-text {
