@@ -205,7 +205,7 @@ main {
     width: 240px;
     object-fit: cover;
 
-    margin: auto;
+    margin: 10px;
 }
 
 .work-title {
@@ -213,6 +213,10 @@ main {
 
     padding: 10px;
     font-size: 1.2em;
+}
+
+.work-title span {
+    display: inline-block;
 }
 
 .modal {

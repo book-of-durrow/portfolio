@@ -1,9 +1,10 @@
 ---
 layout: default
-title: TRPGキャラクター立ち絵
+title: TRPGキャラクター
 image: /assets/TrpgCharacters/EraForkole/era_forkole.webp
 date: 2024-10-18
 categories: works
+name: <span>TRPG</span><span>キャラクター</span>
 description: "TRPGに使用したプレイヤーキャラクターの立ち絵です。"
 ---
 <section>
