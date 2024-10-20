@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Georgia', sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     background-color: #111923; /* デフォルト背景色 */
     color: #e7dac4; /* デフォルト文字色 */
@@ -232,6 +232,15 @@ main {
     overflow: auto;
 
     background-color: rgba(0, 0, 0, 0.9);
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .modal-content {
@@ -285,6 +294,163 @@ main {
 
 .losted-chara {
     color: #b21523;
+}
+
+.diaries {
+    max-width: 600px;
+    margin: auto;
+}
+
+.diaries ul {
+    list-style: none;
+    padding: 0;
+}
+
+.diaries li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.diaries h2 {
+    text-align: start;
+}
+
+.diaries a {
+    text-decoration: none;
+    color: #e7dac4;
+}
+
+.diaries a:hover {
+    text-decoration: underline;
+    color: #f26138;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 0 0 70%;
+    min-width: 200px;
+}
+
+.main-content h1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #c0b5a3;
+
+    text-align: start;
+}
+
+.date {
+    font-family: 'Noto Sans JP P', sans-serif;
+    color: #c0b5a3;
+
+    text-align: end;
+
+    display: block;
+}
+
+.main-content p {
+    font-family: 'Noto Sans JP P', sans-serif;
+    color: #9a9183;
+
+    margin-bottom: 1.5em;
+}
+
+.sidebar {
+    flex: 0 0 30%;
+    background-color: #232323;
+    padding: 15px;
+    border-radius: 3px;
+    min-width: 200px;
+}
+
+.month-list li {
+    list-style: none;
+}
+
+.month-list button {
+    font-family: 'Noto Serif JP', 'Georgia', serif;
+    color: #e7dac4;
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.month-list button:hover {
+    background-color: #3c7fb6;
+}
+
+.month-toggle {
+    background: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-align: start;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.post-list {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.post-list a {
+    text-decoration: none;
+    color: #e7dac4;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
+    color: #f26138;
+}
+
+.hidden {
+    display: none;
+}
+
+.post-list.show {
+    display: block;
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.scroll-to-top {
+    display: block;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #232323;
+    text-decoration: none;
+    color: #f26138;
+
+    border-radius: 8px;
+
+    padding: 4px;
+    text-align: center;
+
+    transition: transform 0.1s ease;
+}
+
+.scroll-to-top:hover {
+    transform: scale(1.01);
+}
+
+code[class*=language-], pre[class*=language-] {
+    color: #c0b5a3;
 }
 
 h1, h2 {
@@ -391,6 +557,10 @@ footer {
     }
 
     .modal-content {
+        flex-direction: column;
+    }
+
+    .container {
         flex-direction: column;
     }
 }

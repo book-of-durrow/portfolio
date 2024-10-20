@@ -7,16 +7,30 @@ const thumbnails = document.querySelectorAll('.thumbnail');
 
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', function() {
-        modal.style.display = 'flex';
+        /*modal.style.display = 'flex';*/
         modalImg.src = this.src;
-        modalCaption.innerHTML = this.dataset.description;
+        if (modalCaption) {
+            modalCaption.innerHTML = this.dataset.description;
+        }
+        modal.style.display = 'flex';
+        setTimeout(() => {
+            modal.classList.add('show');
+        }, 10);
     });
 });
 
 closeBtn.onclick = function() {
-    modal.style.display = 'none';
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 500);
 };
 
 modal.onclick = function() {
-    modal.style.display = 'none';
+    if (event.target === modal) {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 500);
+    }
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }} - hisanosis Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-twilight.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="english">Gnosyche Gallery</h1>
+            <nav>
+                <a href="{{ site.baseurl }}/index.html">Home</a>
+                <a href="{{ site.baseurl }}/Works.html">Works</a>
+                <a href="{{ site.baseurl }}/Diary.html">Diary</a>
+                <a href="{{ site.baseurl }}/Links.html">Links</a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <article class="main-content">
+                    <h1>{{ page.title }}</h1>
+                    <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
+                    <p>{{ content }}</p>
+                    <a href="#" id="scrollToTop" class="scroll-to-top">↑ 上に戻る</a>
+                </article>
+
+                <aside class="sidebar">
+                    <h2>記事一覧</h2>
+
+                    {% assign posts_by_month = site.posts | where: "categories", "diary" | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+
+                    <ul class="month-list">
+                        <ul>
+                            {% for month in posts_by_month %}
+                            <li>
+                                <button class="month-toggle">{{ month.name | date: "%Y年 %m月" }}</button>
+                                <ul class="post-list hidden">
+                                    {% for post in month.items %}
+                                    <li>
+                                        <a href="{{ site.baseurl }}{{ post.url }}"><span>[{{ post.date | date: "%Y-%m-%d" }}]</span> {{ post.title }}</a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </ul>
+                </aside>
+            </div>
+
+            <script src="{{ site.baseurl }}/script/monthToggle.js"></script>
+            <script src="{{ site.baseurl }}/script/scrollTop.js"></script>
+
+            <footer>
+                <p>&copy;2024 hisanosis</p>
+            </footer>
+        </main>
+    </body>
+</html>

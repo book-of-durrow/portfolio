@@ -1,0 +1,24 @@
+---
+layout: default
+title: Diary
+---
+<h1>{{ page.title }}</h1>
+
+{% assign posts_by_month = site.posts | where: "categories", "diary" | group_by_exp: "post", "post.date | date: '%Y-%m'" %}
+
+<section class="diaries">
+    <ul>
+        {% for month in posts_by_month %}
+            <li>
+                <h2>{{ month.name | date: "%Y年 %m月" }}</h2>
+                <ul>
+                    {% for post in month.items %}
+                        <li>
+                            <a href="{{ site.baseurl }}{{ post.url }}"><span>[{{ post.date | date: "%Y-%m-%d" }}]</span> {{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</section>
