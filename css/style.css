@@ -527,6 +527,10 @@ footer {
     header {
         font-size: 1.5rem;
     }
+
+    main {
+        padding: 0;
+    }
     
     nav a {
         margin: 0 10px;
@@ -573,6 +577,6 @@ footer {
 
     .container {
         flex-direction: column;
-        padding: 5px;
+        padding: 0;
     }
 }
