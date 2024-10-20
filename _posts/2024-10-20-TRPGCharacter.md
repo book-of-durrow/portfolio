@@ -40,15 +40,15 @@ description: "TRPGに使用したプレイヤーキャラクターの立ち絵�
             <img src="{{ site.baseurl }}/assets/TrpgCharacters/AsutoroNaoto/asutoro_naoto.webp"
                  alt="明日瀞 直人"
                  class="thumbnail"
-                 data-description="{% include asutoro_naoto.html %}">
-            <p><ruby><rb>明日瀞 直人</rb><rp>(</rp><rt>あすとろ なおと</rt><rp>)</rp></ruby></p>
+                 data-description="{% include asutoro_naoto.html %}<p class='losted'>LOSTED</p>">
+            <p class="losted-chara"><ruby><rb>明日瀞 直人</rb><rp>(</rp><rt>あすとろ なおと</rt><rp>)</rp></ruby></p>
         </div>
         <div class="gallery-item">
             <img src="{{ site.baseurl }}/assets/TrpgCharacters/BandouTen/bandou_ten.webp"
                  alt="坂東 天"
                  class="thumbnail"
-                 data-description="{% include bandou_ten.html %}">
-            <p><ruby><rb>坂東 天</rb><rp>(</rp><rt>ばんどう てん</rt><rp>)</rp></ruby></p>
+                 data-description="{% include bandou_ten.html %}<p class='losted'>LOSTED</p>">
+            <p class="losted-chara"><ruby><rb>坂東 天</rb><rp>(</rp><rt>ばんどう てん</rt><rp>)</rp></ruby></p>
         </div>
         <div class="gallery-item">
             <img src="{{ site.baseurl }}/assets/TrpgCharacters/DenyouYumemi/denyou_yumemi.png"
@@ -82,8 +82,8 @@ description: "TRPGに使用したプレイヤーキャラクターの立ち絵�
             <img src="{{ site.baseurl }}/assets/TrpgCharacters/IchikubaChiyo/ichikuba_chiyo.webp"
                  alt="壱玖波 千代"
                  class="thumbnail"
-                 data-description="{% include ichikuba_chiyo.html %}">
-            <p><ruby><rb>壱玖波 千代</rb><rp>(</rp><rt>いちくば ちよ</rt><rp>)</rp></ruby></p>
+                 data-description="{% include ichikuba_chiyo.html %}<p class='losted'>LOSTED</p>">
+            <p class="losted-chara"><ruby><rb>壱玖波 千代</rb><rp>(</rp><rt>いちくば ちよ</rt><rp>)</rp></ruby></p>
         </div>
         <div class="gallery-item">
             <img src="{{ site.baseurl }}/assets/TrpgCharacters/IgaChisa/iga_chisa.webp"
@@ -126,6 +126,73 @@ description: "TRPGに使用したプレイヤーキャラクターの立ち絵�
                  class="thumbnail"
                  data-description="{% include kurau_wakako.html %}">
             <p><ruby><rb>倉兎 和佳子</rb><rp>(</rp><rt>くらう わかこ</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/MartaFranciscaMartinezLopez/marta_francisca.webp"
+                 alt="マルタ・フランシスカ"
+                 class="thumbnail"
+                 data-description="{% include marta_francisca.html %}<p class='losted'>LOSTED</p>">
+            <p class="losted-chara">マルタ・フランシスカ</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/ResutaMinto/resuta_minto.webp"
+                 alt="令須田 明斗"
+                 class="thumbnail"
+                 data-description="{% include resuta_minto.html %}">
+            <p><ruby><rb>令須田 明斗</rb><rp>(</rp><rt>れすた みんと</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/RudonHitomi/rudon_hitomi.webp"
+                 alt="流呑 瞳"
+                 class="thumbnail"
+                 data-description="{% include rudon_hitomi.html %}">
+            <p><ruby><rb>流呑 瞳</rb><rp>(</rp><rt>るどん ひとみ</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/TokuramaKurara/tokurama_kurara.webp"
+                 alt="戸倉間 くらら"
+                 class="thumbnail"
+                 data-description="{% include tokurama_kurara.html %}">
+            <p><ruby><rb>戸倉間 くらら</rb><rp>(</rp><rt>とくらま くらら</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/UmikawaYasushi/umikawa_yasushi.webp"
+                 alt="海河 康"
+                 class="thumbnail"
+                 data-description="{% include umikawa_yasushi.html %}">
+            <p><ruby><rb>海河 康</rb><rp>(</rp><rt>うみかわ やすし</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/UsokaraMakoto/usokara_makoto.webp"
+                 alt="鷽唐 誠"
+                 class="thumbnail"
+                 data-description="{% include usokara_makoto.html %}">
+            <p><ruby><rb>鷽唐 誠</rb><rp>(</rp><rt>うそから まこと</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/YoidoRei/yoido_rei.gif"
+                 alt="宵戸 玲"
+                 class="thumbnail"
+                 data-description="{% include yoido_rei.html %}<p class='losted'>LOSTED</p>">
+            <p class="losted-chara"><ruby><rb>宵戸 玲</rb><rp>(</rp><rt>よいど れい</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/YubikuReiko/yubiku_reiko.webp"
+                 alt="油比丘 霊子"
+                 class="thumbnail"
+                 data-description="{% include yubiku_reiko.html %}">
+            <p><ruby><rb>油比丘 霊子</rb><rp>(</rp><rt>ゆびく れいこ</rt><rp>)</rp></ruby></p>
+        </div>
+    </div>
+
+    <h2>エモクロアTRPG</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/ShiyouHana/shiyou_hana.webp"
+                 alt="紫陽 花"
+                 class="thumbnail"
+                 data-description="{% include shiyou_hana.html %}">
+            <p><ruby><rb>紫陽 花</rb><rp>(</rp><rt>しよう はな</rt><rp>)</rp></ruby></p>
         </div>
     </div>
 

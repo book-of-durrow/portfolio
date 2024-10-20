@@ -276,6 +276,17 @@ main {
     cursor: pointer;
 }
 
+.losted {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: #b21523;
+}
+
+.losted-chara {
+    color: #b21523;
+}
+
 h1, h2 {
     font-family: 'Noto Serif JP', 'Georgia', serif;
     text-align: center;
