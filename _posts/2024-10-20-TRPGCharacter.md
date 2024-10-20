@@ -91,6 +91,48 @@ description: "TRPGに使用したプレイヤーキャラクターの立ち絵�
                  data-description="{% include iga_chisa.html %}">
             <p><ruby><rb>伊賀 ちさ</rb><rp>(</rp><rt>いが ちさ</rt><rp>)</rp></ruby></p>
         </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/ItanShimone/itan_shimone.webp"
+                 alt="伊丹 霜音"
+                 class="thumbnail"
+                 data-description="{% include itan_shimone.html %}">
+            <p><ruby><rb>伊丹 霜音</rb><rp>(</rp><rt>いたん しもね</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/KanzenriKai/kanzenri_kai.webp"
+                 alt="完全裏 改"
+                 class="thumbnail"
+                 data-description="{% include kanzenri_kai.html %}">
+            <p><ruby><rb>完全裏 改</rb><rp>(</rp><rt>かんぜんり かい</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/KarabiYou/karabi_you.webp"
+                 alt="殻尾 洋"
+                 class="thumbnail"
+                 data-description="{% include karabi_you.html %}">
+            <p><ruby><rb>殻尾 洋</rb><rp>(</rp><rt>からび よう</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/DenyouYumemi/denyou_yumemi.png"
+                 alt="電羊 夢見"
+                 class="thumbnail"
+                 data-description="{% include denyou_yumemi.html %}">
+            <p><ruby><rb>電羊 夢見</rb><rp>(</rp><rt>でんよう ゆめみ</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/KomitsuKai/komitsu_kai.webp"
+                 alt="古美津 海"
+                 class="thumbnail"
+                 data-description="{% include komitsu_kai.html %}">
+            <p><ruby><rb>古美津 海</rb><rp>(</rp><rt>こみつ かい</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/KurauWakako/kurau_wakako.webp"
+                 alt="倉兎 和佳子"
+                 class="thumbnail"
+                 data-description="{% include kurau_wakako.html %}">
+            <p><ruby><rb>倉兎 和佳子</rb><rp>(</rp><rt>くらう わかこ</rt><rp>)</rp></ruby></p>
+        </div>
     </div>
 
     <h2>サイバーパンクRED</h2>
