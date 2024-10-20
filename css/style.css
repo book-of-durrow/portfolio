@@ -118,6 +118,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: end;
     gap: 15px;
 
     max-width: 1200px;
@@ -137,12 +138,15 @@ main {
 .gallery-item img {
     width: 100%;
     height: auto;
+    max-height: 350px;
+    object-fit: contain;
 
     display: block;
 }
 
 .gallery-item p {
     text-align: center;
+    margin: 5px;
 }
 
 .thumbnail {
