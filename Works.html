@@ -2,13 +2,13 @@
 layout: default
 title: Works
 ---
-<h1>Works</h1>
+<h1>{{ page.title }}</h1>
 <div class="works-gallery">
     {% for post in site.posts %}
         {% if post.categories contains "works" %}
             <a href="{{ site.baseurl }}{{ post.url }}" class="work-card">
                 <div class="work-thumbnail">
-                    <img src="{{ site.baseurl }}/assets/Tarot_00_The_Fool.webp">
+                    <img src="{{ site.baseurl }}{{ post.image }}">
                 </div>
                 <div class="work-title">
                     <h2>{{ post.title }}</h2>
