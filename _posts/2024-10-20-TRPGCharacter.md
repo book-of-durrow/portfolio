@@ -56,6 +56,52 @@ description: "TRPGに使用したプレイヤーキャラクターの立ち絵�
                  data-description="{% include denyou_yumemi.html %}">
             <p><ruby><rb>電羊 夢見</rb><rp>(</rp><rt>でんよう ゆめみ</rt><rp>)</rp></ruby></p>
         </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/FuruidoYun/furuido_yun.webp"
+                 alt="古井戸 ゆん"
+                 class="thumbnail"
+                 data-description="{% include furuido_yun.html %}">
+            <p><ruby><rb>古井戸 ゆん</rb><rp>(</rp><rt>ふるいど ゆん</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/HarinoMushiro/harino_mushiro.webp"
+                 alt="玻璃野 無白"
+                 class="thumbnail"
+                 data-description="{% include harino_mushiro.html %}">
+            <p><ruby><rb>玻璃野 無白</rb><rp>(</rp><rt>はりの むしろ</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/HarryThousand/harry_thousand.webp"
+                 alt="ハリー・サウザンド"
+                 class="thumbnail"
+                 data-description="{% include harry_thousand.html %}">
+            <p>ハリー・サウザンド</p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/IchikubaChiyo/ichikuba_chiyo.webp"
+                 alt="壱玖波 千代"
+                 class="thumbnail"
+                 data-description="{% include ichikuba_chiyo.html %}">
+            <p><ruby><rb>壱玖波 千代</rb><rp>(</rp><rt>いちくば ちよ</rt><rp>)</rp></ruby></p>
+        </div>
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/IgaChisa/iga_chisa.webp"
+                 alt="伊賀 ちさ"
+                 class="thumbnail"
+                 data-description="{% include iga_chisa.html %}">
+            <p><ruby><rb>伊賀 ちさ</rb><rp>(</rp><rt>いが ちさ</rt><rp>)</rp></ruby></p>
+        </div>
+    </div>
+
+    <h2>サイバーパンクRED</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="{{ site.baseurl }}/assets/TrpgCharacters/GenieEarth/genie_earth.webp"
+                 alt="ジニー・アース"
+                 class="thumbnail"
+                 data-description="{% include genie_earth.html %}">
+            <p>ジニー・アース</p>
+        </div>
     </div>
 </section>
 
