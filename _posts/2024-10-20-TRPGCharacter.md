@@ -8,7 +8,7 @@ name: <span>TRPG</span><span>キャラクター</span>
 description: "TRPGに使用したプレイヤーキャラクターの立ち絵です。"
 ---
 <section>
-    <h1>TRPGキャラクター立ち絵</h1>
+    <h1><span>TRPG</span><span>キャラクター</span></h1>
     <h2>D&amp;D</h2>
     <div class="gallery">
         <div class="gallery-item">

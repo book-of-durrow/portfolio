@@ -202,10 +202,9 @@ main {
     display: block;
 
     height: 280px;
-    width: 240px;
     object-fit: cover;
 
-    margin: 10px;
+    margin: auto;
 }
 
 .work-title {
@@ -292,6 +291,14 @@ h1 {
     font-size: 2em;
 }
 
+h1 span {
+    display: inline-block;
+}
+
+h2 span {
+    display: inline-block;
+}
+
 h2.left {
     text-align: start;
 }
@@ -364,7 +371,6 @@ footer {
 
     .work-thumbnail img {
         height: 190px;
-        width: 150px;
     }
 
     .work-title {
