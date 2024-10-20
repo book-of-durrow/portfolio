@@ -113,13 +113,6 @@ description: "TRPGに使用したプレイヤーキャラクターの立ち絵�
             <p><ruby><rb>殻尾 洋</rb><rp>(</rp><rt>からび よう</rt><rp>)</rp></ruby></p>
         </div>
         <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/TrpgCharacters/DenyouYumemi/denyou_yumemi.png"
-                 alt="電羊 夢見"
-                 class="thumbnail"
-                 data-description="{% include denyou_yumemi.html %}">
-            <p><ruby><rb>電羊 夢見</rb><rp>(</rp><rt>でんよう ゆめみ</rt><rp>)</rp></ruby></p>
-        </div>
-        <div class="gallery-item">
             <img src="{{ site.baseurl }}/assets/TrpgCharacters/KomitsuKai/komitsu_kai.webp"
                  alt="古美津 海"
                  class="thumbnail"
