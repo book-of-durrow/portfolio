@@ -3,3 +3,15 @@ layout: default
 title: Home
 ---
 {% include tarot.html %}
+
+<div class="page-content">
+    <h2>最近の記事</h2>
+    <ul>
+        {% assign recent_posts = site.posts | slice: 0, 5 %}
+        {% for post in recent_posts %}
+        <li class="post-list">
+            <a class="post-item" href="{{ post.url | relative_url }}"><span>{{ post.title }}</span><span id="date">{{ post.date | date: "%Y-%m-%d" }}</span></a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

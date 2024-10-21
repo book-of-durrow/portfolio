@@ -13,9 +13,6 @@ body {
 
 @font-face {
     font-family: 'Noto Serif JP';
-    src: local('Noto Serif JP'),
-    url('https://fonts.gstatic.com/s/notoserifjp/v42/-F6ofjtqLzI2JPCgQBnw7HFQogg.woff2') format('woff2');
-    unicode-range: U+3000-30FF, U+4E00-9FFF, U+FF00-FFEF;
 }
 
 header {
@@ -195,13 +192,20 @@ main {
 }
 
 .work-thumbnail {
-    flex: 0 0 30%;
+    height: 280px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 35%;
+    position: relative;
 }
 
 .work-thumbnail img {
+    position: absolute;
     display: block;
 
-    height: 280px;
+    height: 500px;
     object-fit: cover;
 
     margin: auto;
@@ -347,7 +351,7 @@ main {
 }
 
 .date {
-    font-family: 'Noto Sans JP P', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: #c0b5a3;
 
     text-align: end;
@@ -356,7 +360,7 @@ main {
 }
 
 .main-content p {
-    font-family: 'Noto Sans JP P', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     color: #9a9183;
 
     margin-bottom: 1.5em;
@@ -419,6 +423,16 @@ main {
 .post-list.show {
     display: block;
     animation: fadeIn 0.2s ease-in-out;
+}
+
+.post-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-item #date {
+    flex: 0 0 90px;
 }
 
 @keyframes fadeIn {
@@ -562,11 +576,11 @@ footer {
     }
 
     .work-thumbnail img {
-        height: 190px;
+        height: 300px;
     }
 
     .work-title {
-        flex: 0 0 60%;
+        flex: 0 0 80%;
         padding: 10px;
         font-size: 0.8em;
     }
