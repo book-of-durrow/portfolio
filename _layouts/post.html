@@ -27,10 +27,10 @@
                     <h1>{{ page.title }}</h1>
                     <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
                     <p>{{ content }}</p>
-                    <a href="#" id="scrollToTop" class="scroll-to-top">↑ 上に戻る</a>
+                    <a href="#" id="scrollToTop" class="scroll-to-top button">↑ 上に戻る</a>
                 </article>
 
-                <aside class="sidebar">
+                <aside class="sidebar card">
                     <h2>記事一覧</h2>
 
                     {% assign posts_by_month = site.posts | where: "categories", "diary" | sort: "date" | reverse | group_by_exp: "post", "post.date | date: '%Y-%m'" %}

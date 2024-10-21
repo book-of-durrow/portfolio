@@ -6,7 +6,7 @@ title: Works
 <div class="works-gallery">
     {% for post in site.posts %}
         {% if post.categories contains "works" %}
-            <a href="{{ post.url | relative_url }}" class="work-card">
+            <a href="{{ post.url | relative_url }}" class="work-card card-outline">
                 <div class="work-thumbnail">
                     <img src="{{ post.image | relative_url }}">
                 </div>
