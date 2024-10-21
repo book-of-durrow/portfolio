@@ -27,10 +27,8 @@ closeBtn.onclick = function() {
 };
 
 modal.onclick = function() {
-    if (event.target === modal) {
-        modal.classList.remove('show');
-        setTimeout(() => {
-            modal.style.display = 'none';
-        }, 500);
-    }
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 500);
 }

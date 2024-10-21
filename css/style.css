@@ -49,6 +49,11 @@ header {
     border-bottom: 4px solid #444;
 }
 
+.title {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 nav a {
     position: relative;
 
