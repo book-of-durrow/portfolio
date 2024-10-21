@@ -571,6 +571,7 @@ footer {
 
     .work-thumbnail {
         flex: 0 0 20%;
+        height: 180px;
         display: flex;
         justify-content: center;
     }
