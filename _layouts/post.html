@@ -19,7 +19,7 @@
                     <h1>{{ page.title }}</h1>
                     <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
                     <p>{{ content }}</p>
-                    <a href="#" id="scrollToTop" class="scroll-to-top button">↑ 上に戻る</a>
+                    <button id="scrollToTop" class="scroll-to-top button">↑ 上に戻る</button>
                 </article>
 
                 <aside class="sidebar card">
@@ -32,7 +32,7 @@
                             {% for month in posts_by_month %}
                             <li>
                                 <button class="month-toggle">{{ month.name | date: "%Y年 %m月" }}</button>
-                                <ul class="post-list hidden">
+                                <ul class="post-list post-list-default hidden">
                                     {% for post in month.items %}
                                     <li>
                                         <a href="{{ post.url | relative_url }}"><span>[{{ post.date | date: "%Y-%m-%d" }}]</span> {{ post.title }}</a>

@@ -3,14 +3,15 @@ layout: default
 title: Works
 ---
 <h1>{{ page.title }}</h1>
-<div class="works-gallery">
+<div class="flex-center cards cards-column cards-works">
     {% for post in site.posts %}
         {% if post.categories contains "works" %}
-            <a href="{{ post.url | relative_url }}" class="work-card card-outline">
-                <div class="work-thumbnail">
+            <a href="{{ post.url | relative_url }}"
+               class="flex-center card card-outline card-clickable card-work">
+                <div class="flex-center card-thumbnail card-thumbnail-work">
                     <img src="{{ post.image | relative_url }}" {{ post.pos }}>
                 </div>
-                <div class="work-title">
+                <div class="card-title">
                     <h2>{{ post.name }}</h2>
                 </div>
             </a>

@@ -10,6 +10,11 @@
     --card-color: #232323;
     --content-max-width: 1200px;
     --blog-text-color: #9a9183;
+    --blog-h-color: #c0b5a3;
+    --blog-font-family: 'Noto Sans JP', sans-serif;
+    --primary-font-family: 'Noto Serif JP', 'Georgia', serif;
+    --button-hover-color: #3c7fb6;
+    --button-color: #2f2f2f;
 }
 
 body {
@@ -22,26 +27,6 @@ body {
 @font-face {
     font-family: 'Noto Serif JP';
 }
-
-/* 共通部品 */
-.card {
-    background-color: var(--card-color);
-    border-radius: 4px;
-    padding: 15px;
-}
-
-.card-outline {
-    border: 2px solid #90846f;
-    border-radius: 4px;
-}
-
-.button {
-    background-color: var(--card-color);
-    border-radius: 12px;
-    background-color: #2f2f2f;
-    padding: 5px 20px;
-}
-/* 共通部品終了 */
 
 header {
     background-color: var(--card-color); /* ヘッダ部分の背景色 */
@@ -56,14 +41,12 @@ header {
 
 .title {
     color: var(--primary-color);
-    text-decoration: none;
 }
 
 nav a {
     position: relative;
 
     color: var(--secondary-color);
-    text-decoration: none;
     font-weight: bold;
 
     margin: 0 15px;
@@ -96,50 +79,114 @@ main {
     padding: 20px;
 }
 
-.social-cards {
+/* ========== 汎用 ========== */
+.flex-center {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 20px;
     justify-content: center;
     align-items: center;
+}
 
+/* ========== カード ========== */
+/* カードリスト */
+.cards {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cards-column {
+    flex-direction: column;
+}
+
+.cards-column .card {
+    width: 100%;
+}
+
+.cards-links {
+}
+
+.cards-works {
+}
+
+/* カード単体 */
+.card {
+    background-color: var(--card-color);
+    border-radius: 4px;
+    padding: 15px;
+    max-width: 800px;
+}
+
+.card-outline {
+    border: 2px solid #90846f;
+    background-color: unset;
+    color: #f6e2bf;
     padding: 10px;
 }
 
-.social-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    max-width: 600px;
-    width: 150%;
-    height: 150%;
-
-    padding: 20px;
-
-    text-decoration: none;
-
-    color: var(--secondary-color);
-    font-size: 20px;
-    font-weight: bold;
-
+.card-clickable {
+    cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-
-    background-color: #2f2f2f;
 }
 
-.social-card i {
+.card-clickable:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Links */
+.card-link {
+    border-radius: 12px;
+    background-color: var(--button-color);
+
+    max-width: 600px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-link i {
     margin-right: 10px;
 
     font-size: 30px;
 }
 
-.social-card:hover {
-    transform: scale(1.01);
-
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+/* Works */
+.card-work {
+    height: 300px;
 }
+
+/* Others */
+.card-others {
+    height: 100px;
+}
+
+/* カードサムネ */
+.card-thumbnail {
+    overflow: hidden;
+    flex: 0 0 35%;
+    height: 100%;
+    position: relative;
+}
+
+.card-thumbnail img {
+    position: absolute;
+    display: block;
+    height: 500px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* カードタイトル */
+.card-title {
+    flex: 0 0 65%;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.card-title span {
+    display: inline-block;
+}
+
+/* ========== ギャラリー ========== */
 
 .gallery {
     display: flex;
@@ -162,6 +209,7 @@ main {
     overflow: hidden;
 }
 
+/* 横長画像対応 */
 .gallery-item-autosize {
     flex-basis: auto;
     max-width: 800px;
@@ -173,10 +221,6 @@ main {
     object-fit: contain;
 
     display: block;
-}
-
-.character {
-    max-height: 350px;
 }
 
 .gallery-item p {
@@ -191,85 +235,15 @@ main {
     transition: transform 0.2s;
 }
 
+.thumbnail-character {
+    max-height: 350px;
+}
+
 .thumbnail:hover {
     transform: scale(1.05);
 }
 
-.works-gallery {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-content: center;
-}
-
-.work-card {
-    width: 100%;
-    max-width: 800px;
-    height: 300px;
-
-    padding: 10px;
-
-    color: #f6e2bf;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    overflow: hidden;
-
-    transition: transform 0.2s;
-}
-
-.work-card:hover {
-    transform: scale(1.01);
-}
-
-.work-card-others {
-    height: 100px;
-}
-
-.work-thumbnail {
-    height: 280px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 35%;
-    position: relative;
-}
-
-.work-thumbnail-others {
-    height: 80px;
-}
-
-.work-thumbnail img {
-    position: absolute;
-    display: block;
-
-    height: 500px;
-    object-fit: cover;
-
-    margin: auto;
-}
-
-.work-title {
-    flex: 0 0 65%; /* iOSで崩れないか要注意(崩れたら0 0 60%に) */
-
-    padding: 10px;
-    font-size: 1.2em;
-}
-
-.work-title p {
-    text-align: center;
-    margin: 0;
-    font-size: 1.2em;
-}
-
-.work-title span {
-    display: inline-block;
-}
+/* ========== モーダル ========== */
 
 .modal {
     display: none;
@@ -291,7 +265,6 @@ main {
 }
 
 .modal.show {
-    display: flex;
     opacity: 1;
     transition: opacity 0.5s ease;
 }
@@ -339,16 +312,23 @@ main {
     cursor: pointer;
 }
 
+/* ========== PC情報 ========== */
+:root {
+    --losted-color: #b21523;
+}
+
 .losted {
     font-size: 2em;
     text-align: center;
     font-weight: bold;
-    color: #b21523;
+    color: var(--losted-color);
 }
 
 .losted-chara {
-    color: #b21523;
+    color: var(--losted-color);
 }
+
+/* ========== 日記一覧 ========== */
 
 .diaries {
     max-width: 600px;
@@ -357,12 +337,10 @@ main {
 
 .diaries ul {
     list-style: none;
-    padding: 0;
 }
 
 .diaries li {
     margin: 10px 0;
-    font-size: 1rem;
 }
 
 .diaries h2 {
@@ -370,7 +348,6 @@ main {
 }
 
 .diaries a {
-    text-decoration: none;
     color: var(--primary-color);
 }
 
@@ -378,6 +355,8 @@ main {
     text-decoration: underline;
     color: var(--secondary-color);
 }
+
+/* ========== 日記本文 ========== */
 
 .container {
     display: flex;
@@ -387,21 +366,22 @@ main {
     padding: 20px;
 }
 
+/* 本文 */
 .main-content {
-    flex: 0 0 70%;
+    flex: 0 1 70%;
     min-width: 200px;
 }
 
-.main-content h1 {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #c0b5a3;
+.main-content h1, .main-content h2, .main-content h3, .main-content h4 {
+    font-family: var(--blog-font-family);
+    color: var(--blog-h-color);
 
     text-align: start;
 }
 
 .date {
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #c0b5a3;
+    font-family: var(--blog-font-family);
+    color: var(--blog-h-color);
 
     text-align: end;
 
@@ -409,12 +389,17 @@ main {
 }
 
 .main-content p {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--blog-font-family);
     color: var(--blog-text-color);
 
     margin-bottom: 1.5em;
 }
 
+.main-content ul {
+    padding-left: 1.5em;
+}
+
+/* サイドバー */
 .sidebar {
     flex: 0 0 30%;
     min-width: 200px;
@@ -425,35 +410,29 @@ main {
 }
 
 .month-list button {
-    font-family: 'Noto Serif JP', 'Georgia', serif;
-    color: var(--primary-color);
+    font-family: var(--primary-font-family);
+    font-size: 1.2rem;
+
+    width: 100%;
     padding: 5px 10px;
+
     transition: all 0.2s ease-in-out;
 }
 
 .month-list button:hover {
-    background-color: #3c7fb6;
-}
-
-.month-toggle {
-    background: none;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.2rem;
-    text-align: start;
-    width: 100%;
-    padding: 10px;
-    cursor: pointer;
+    background-color: var(--button-hover-color);
 }
 
 .post-list {
-    margin: 0;
     padding: 10px;
     list-style: none;
 }
 
+.post-list-default {
+    display: none;
+}
+
 .post-list a {
-    text-decoration: none;
     color: var(--primary-color);
 }
 
@@ -462,66 +441,70 @@ main {
     color: var(--secondary-color);
 }
 
-.hidden {
-    display: none;
-}
-
 .post-list.show {
-    display: block;
     animation: fadeIn 0.2s ease-in-out;
+    opacity: 1;
 }
 
-.post-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.post-item #date {
-    flex: 0 0 90px;
+.post-list.hidden {
+    animation: fadeOut 0.2s ease-in-out;
+    opacity: 0;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* コードブロック対応 */
+code[class*=language-], pre[class*=language-] {
+    color: #c0b5a3;
+}
+
+/* 一番上までスクロール */
 .scroll-to-top {
-    display: block;
-
-    font-family: 'Noto Sans JP', sans-serif;
-    text-decoration: none;
+    width: 100%;
     color: var(--secondary-color);
-
-    padding: 4px;
-    text-align: center;
+    border-radius: 12px;
+    padding: 5px 20px;
+    font-family: var(--blog-font-family);
 
     transition: transform 0.1s ease;
 }
 
 .scroll-to-top:hover {
     transform: scale(1.01);
+    background-color: var(--button-color);
 }
 
+/* ========== トップページ ========== */
+/* 最近の記事 */
+.post-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-item #date {
+    flex: 0 0 90px;
+}
+
+/* 本文 */
 .page-content {
-    max-width: 800px;
     margin: 20px auto;
 }
 
+/* 戻るボタン */
 .back-button {
     text-align: right;
 }
 
-code[class*=language-], pre[class*=language-] {
-    color: #c0b5a3;
-}
-
 h1, h2 {
-    font-family: 'Noto Serif JP', 'Georgia', serif;
+    font-family: var(--primary-font-family);
     text-align: center;
     color #f6e2bf;
 
@@ -535,6 +518,7 @@ h1 {
     font-size: 2em;
 }
 
+/* spanで囲った切れ目を優先的に改行対象に */
 h1 span {
     display: inline-block;
 }
@@ -543,16 +527,12 @@ h2 span {
     display: inline-block;
 }
 
-h2.left {
-    text-align: start;
-}
-
 .english {
     font-family: 'Georgia', serif;
 }
 
 p {
-    font-family: 'Noto Serif JP', 'Georgia', serif;
+    font-family: var(--primary-font-family);
     margin-bottom: 10px;
 }
 
@@ -567,8 +547,9 @@ a {
 }
 
 button {
-    background-color: #80cbc4;
-    color: #121212;
+    background-color: var(--button-color);
+    color: var(--primary-color);
+    text-align: center;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -577,9 +558,10 @@ button {
 }
 
 button:hover {
-    background-color: #4db6ac;
+    background-color: var(--button-hover-color);
 }
 
+/* ========== フッター ========== */
 footer {
     text-align: center;
     margin-top: 20px;
@@ -591,10 +573,8 @@ footer {
 
 /* 特殊化 */
 .flex-column {
-    display: flex;
     flex-direction: column;
 }
-
 
 @media (max-width: 700px) {
     header {
@@ -609,58 +589,54 @@ footer {
         margin: 0 10px;
     }
 
+    /* カード */
+    .card-link {
+        font-size: 16px;
+    }
+
+    .card-link i {
+        font-size: 24px;
+    }
+
+    .card-work {
+        height: 200px;
+    }
+
+    .card-others {
+        height: 100px;
+    }
+
+    .card-thumbnail {
+        flex: 0 0 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-thumbnail img {
+        height: 300px;
+    }
+
+    .card-thumbnail-others img {
+        height: 500px;
+    }
+
+    .card-title {
+        flex: 0 0 80%;
+        font-size: 0.8em;
+    }
+
+    /* ギャラリー */
     .gallery-item {
         flex: 1 1 45%;
         max-width: 50%;
     }
 
-    .social-card {
-        width: 300px;
-        height: 100px;
-        font-size: 16px;
-    }
-
-    .social-card i {
-        font-size: 24px;
-    }
-
-    .work-card {
-        height: 200px;
-    }
-
-    .work-card-others {
-        height: 100px;
-    }
-
-    .work-thumbnail {
-        flex: 0 0 20%;
-        height: 180px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .work-thumbnail-others {
-        height: 80px;
-    }
-
-    .work-thumbnail img {
-        height: 300px;
-    }
-
-    .work-thumbnail-others img {
-        height: 500px;
-    }
-
-    .work-title {
-        flex: 0 0 80%;
-        padding: 10px;
-        font-size: 0.8em;
-    }
-
+    /* モーダル */
     .modal-content {
         flex-direction: column;
     }
 
+    /* 日記 */
     .container {
         flex-direction: column;
         padding: 0;

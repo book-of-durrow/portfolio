@@ -6,11 +6,12 @@ title: Others
 
 {% assign posts = site.posts | where: "categories", "others" %}
 
-<div class="works-gallery">
+<div class="flex-center cards cards-column">
     {% for post in posts %}
-        <a href="{{ post.url | relative_url }}" class="work-card work-card-others card-outline">
-            <div class="work-title">
-                <p>{{ post.title }}</p>
+        <a href="{{ post.url | relative_url }}"
+           class="flex-center card card-outline card-clickable card-others">
+            <div class="card-title">
+                <h2>{{ post.title }}</h2>
             </div>
         </a>
     {% endfor %}
