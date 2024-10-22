@@ -16,3 +16,38 @@
 - path: "/assets/TrpgCharacters/EraForkole/era_forkole_halloween.webp"
   caption: "ハロウィン"
 
+- path: "/assets/TrpgCharacters/BandouTen/bandou_ten.webp"
+  caption: "通常"
+
+- path: "/assets/TrpgCharacters/BandouTen/bandou_ten_00_smile.webp"
+  caption: "笑顔"
+
+- path: "/assets/TrpgCharacters/BandouTen/bandou_ten_01_angry.webp"
+  caption: "怒り"
+
+- path: "/assets/TrpgCharacters/BandouTen/bandou_ten_02_sad.webp"
+  caption: "悲しみ"
+
+- path: "/assets/TrpgCharacters/BandouTen/bandou_ten_fumble.webp"
+  caption: "ファンブル"
+
+- path: "/assets/TrpgCharacters/IgaChisa/iga_chisa.webp"
+  caption: "通常"
+
+- path: "/assets/TrpgCharacters/IgaChisa/iga_chisa_00_angry.webp"
+  caption: "怒り"
+
+- path: "/assets/TrpgCharacters/IgaChisa/iga_chisa_01_cry.webp"
+  caption: "泣き"
+
+- path: "/assets/TrpgCharacters/IgaChisa/iga_chisa_02_sad.webp"
+  caption: "悲しみ"
+
+- path: "/assets/TrpgCharacters/IgaChisa/iga_chisa_fumble.webp"
+  caption: "ファンブル"
+
+- path: "/assets/TrpgCharacters/ItanShimone/itan_shimone.webp"
+  caption: "通常"
+
+- path: "/assets/TrpgCharacters/ItanShimone/itan_shimone_shifuku.webp"
+  caption: "私服"

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: エラ・フォルコール
-image: /assets/TrpgCharacters/EraForkole/era_forkole.webp
-name: エラ・フォルコール
+title: 伊丹 霜音
+image: /assets/TrpgCharacters/ItanShimone/itan_shimone.webp
+name: 伊丹 霜音
 categories: "pc-diffs"
-pos: "style='top: -150px;'"
+pos: "style='position: relative; top: -30px; left: 20px;'"
 ---
 
-{% assign images = site.static_files | where_exp: "item", "item.path contains 'assets/TrpgCharacters/EraForkole'" %}
+{% assign images = site.static_files | where_exp: "item", "item.path contains 'assets/TrpgCharacters/ItanShimone'" %}
 {% include pc_diff.html images=images %}
 
 {% assign post = site.posts | where: "title", "PC差分" | first%}

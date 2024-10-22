@@ -1,13 +1,13 @@
 ---
 layout: default
-title: エラ・フォルコール
-image: /assets/TrpgCharacters/EraForkole/era_forkole.webp
-name: エラ・フォルコール
+title: 坂東 天
+image: /assets/TrpgCharacters/BandouTen/bandou_ten.webp
+name: 坂東 天
 categories: "pc-diffs"
-pos: "style='top: -150px;'"
+pos: "style='top: -20px;'"
 ---
 
-{% assign images = site.static_files | where_exp: "item", "item.path contains 'assets/TrpgCharacters/EraForkole'" %}
+{% assign images = site.static_files | where_exp: "item", "item.path contains 'assets/TrpgCharacters/BandouTen'" %}
 {% include pc_diff.html images=images %}
 
 {% assign post = site.posts | where: "title", "PC差分" | first%}
