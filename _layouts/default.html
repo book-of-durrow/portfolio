@@ -9,15 +9,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <header>
-            <h1 class="english"><a class="title" href="{{ site.baseurl }}/index.html">Gnosyche Gallery</a></h1>
-            <nav>
-                <a href="{{ site.baseurl }}/index.html">Home</a>
-                <a href="{{ site.baseurl }}/Works.html">Works</a>
-                <a href="{{ site.baseurl }}/Diary.html">Diary</a>
-                <a href="{{ site.baseurl }}/Links.html">Links</a>
-            </nav>
-        </header>
+        {% include header.html %}
         <main>
             {{ content }}
             <footer>

@@ -9,6 +9,7 @@
     --secondary-color: #f26138;
     --card-color: #232323;
     --content-max-width: 1200px;
+    --blog-text-color: #9a9183;
 }
 
 body {
@@ -22,6 +23,7 @@ body {
     font-family: 'Noto Serif JP';
 }
 
+/* 共通部品 */
 .card {
     background-color: var(--card-color);
     border-radius: 4px;
@@ -36,7 +38,10 @@ body {
 .button {
     background-color: var(--card-color);
     border-radius: 12px;
+    background-color: #2f2f2f;
+    padding: 5px 20px;
 }
+/* 共通部品終了 */
 
 header {
     background-color: var(--card-color); /* ヘッダ部分の背景色 */
@@ -157,6 +162,11 @@ main {
     overflow: hidden;
 }
 
+.gallery-item-autosize {
+    flex-basis: auto;
+    max-width: 800px;
+}
+
 .gallery-item img {
     width: 100%;
     height: auto;
@@ -216,6 +226,10 @@ main {
     transform: scale(1.01);
 }
 
+.work-card-others {
+    height: 100px;
+}
+
 .work-thumbnail {
     height: 280px;
     overflow: hidden;
@@ -224,6 +238,10 @@ main {
     align-items: center;
     flex: 0 0 35%;
     position: relative;
+}
+
+.work-thumbnail-others {
+    height: 80px;
 }
 
 .work-thumbnail img {
@@ -240,6 +258,12 @@ main {
     flex: 0 0 65%; /* iOSで崩れないか要注意(崩れたら0 0 60%に) */
 
     padding: 10px;
+    font-size: 1.2em;
+}
+
+.work-title p {
+    text-align: center;
+    margin: 0;
     font-size: 1.2em;
 }
 
@@ -386,7 +410,7 @@ main {
 
 .main-content p {
     font-family: 'Noto Sans JP', sans-serif;
-    color: #9a9183;
+    color: var(--blog-text-color);
 
     margin-bottom: 1.5em;
 }
@@ -488,6 +512,10 @@ main {
     margin: 20px auto;
 }
 
+.back-button {
+    text-align: right;
+}
+
 code[class*=language-], pre[class*=language-] {
     color: #c0b5a3;
 }
@@ -528,6 +556,16 @@ p {
     margin-bottom: 10px;
 }
 
+hr {
+    border-color: var(--blog-text-color);
+    margin-bottom: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 button {
     background-color: #80cbc4;
     color: #121212;
@@ -550,6 +588,13 @@ footer {
     border-top: 1px solid #333;
     padding-top: 10px;
 }
+
+/* 特殊化 */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media (max-width: 700px) {
     header {
@@ -583,11 +628,19 @@ footer {
         height: 200px;
     }
 
+    .work-card-others {
+        height: 100px;
+    }
+
     .work-thumbnail {
         flex: 0 0 20%;
         height: 180px;
         display: flex;
         justify-content: center;
+    }
+
+    .work-thumbnail-others {
+        height: 80px;
     }
 
     .work-thumbnail img {

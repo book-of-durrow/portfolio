@@ -8,7 +8,7 @@ title: Works
         {% if post.categories contains "works" %}
             <a href="{{ post.url | relative_url }}" class="work-card card-outline">
                 <div class="work-thumbnail">
-                    <img src="{{ post.image | relative_url }}">
+                    <img src="{{ post.image | relative_url }}" {{ post.pos }}>
                 </div>
                 <div class="work-title">
                     <h2>{{ post.name }}</h2>
