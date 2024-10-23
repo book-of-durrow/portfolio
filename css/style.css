@@ -13,7 +13,7 @@
     --blog-h-color: #c0b5a3;
     --blog-font-family: 'Noto Sans JP', sans-serif;
     --primary-font-family: 'Noto Serif JP', 'Georgia', serif;
-    --button-hover-color: #3c7fb6;
+    --button-hover-color: #225683;
     --button-color: #2f2f2f;
 }
 
@@ -24,10 +24,47 @@ body {
     color: var(--primary-color); /* デフォルト文字色 */
 }
 
-@font-face {
-    font-family: 'Noto Serif JP';
+/* ========== デフォルトスタイル ========== */
+h1, h2 {
+    font-family: var(--primary-font-family);
+    text-align: center;
+    color #f6e2bf;
+
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #424242;
 }
 
+h1 {
+    font-size: 2em;
+}
+
+/* spanで囲った切れ目を優先的に改行対象に */
+h1 span {
+    display: inline-block;
+}
+
+h2 span {
+    display: inline-block;
+}
+
+p {
+    font-family: var(--primary-font-family);
+    margin-bottom: 10px;
+}
+
+hr {
+    border-color: var(--blog-text-color);
+    margin-bottom: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* ========== ヘッダ ========== */
 header {
     background-color: var(--card-color); /* ヘッダ部分の背景色 */
 
@@ -74,9 +111,14 @@ nav a:hover::after {
     transition: opacity 0.2s ease;
 }
 
-main {
-    margin: 20px;
-    padding: 20px;
+/* ========== フッター ========== */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #757575;
+    font-size: 0.9rem;
+    border-top: 1px solid #333;
+    padding-top: 10px;
 }
 
 /* ========== 汎用 ========== */
@@ -84,6 +126,33 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* 特殊化 */
+.flex-column {
+    flex-direction: column;
+}
+
+.english {
+    font-family: 'Georgia', serif;
+}
+
+button, .button {
+    background-color: var(--button-color);
+    color: var(--primary-color);
+    font-family: var(--blog-font-family);
+    text-align: center;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* メインコンテンツ */
+main {
+    margin: 20px;
+    padding: 20px;
 }
 
 /* ========== カード ========== */
@@ -469,10 +538,10 @@ code[class*=language-], pre[class*=language-] {
 /* 一番上までスクロール */
 .scroll-to-top {
     width: 100%;
-    color: var(--secondary-color);
-    border-radius: 12px;
-    padding: 5px 20px;
     font-family: var(--blog-font-family);
+    color: var(--secondary-color);
+    padding: 5px 20px;
+    border-radius: 12px;
 
     transition: transform 0.1s ease;
 }
@@ -500,80 +569,18 @@ code[class*=language-], pre[class*=language-] {
 
 /* 戻るボタン */
 .back-button {
-    text-align: right;
+    display: flex;
+    justify-content: end;
 }
 
-h1, h2 {
-    font-family: var(--primary-font-family);
-    text-align: center;
-    color #f6e2bf;
-
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-
-    border-bottom: 2px solid #424242;
+.back-button a {
+    padding: 5px 20px;
+    border-radius: 12px;
 }
 
-h1 {
-    font-size: 2em;
-}
-
-/* spanで囲った切れ目を優先的に改行対象に */
-h1 span {
-    display: inline-block;
-}
-
-h2 span {
-    display: inline-block;
-}
-
-.english {
-    font-family: 'Georgia', serif;
-}
-
-p {
-    font-family: var(--primary-font-family);
-    margin-bottom: 10px;
-}
-
-hr {
-    border-color: var(--blog-text-color);
-    margin-bottom: 1.5em;
-}
-
-a {
-    text-decoration: none;
+.back-button a:hover {
     color: var(--secondary-color);
-}
-
-button {
-    background-color: var(--button-color);
-    color: var(--primary-color);
-    text-align: center;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--button-hover-color);
-}
-
-/* ========== フッター ========== */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #757575;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
-    padding-top: 10px;
-}
-
-/* 特殊化 */
-.flex-column {
-    flex-direction: column;
+    transform: scale(1.02);
 }
 
 @media (max-width: 700px) {
