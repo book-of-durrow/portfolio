@@ -28,7 +28,7 @@ body {
 h1, h2 {
     font-family: var(--primary-font-family);
     text-align: center;
-    color #f6e2bf;
+    color: #f6e2bf;
 
     margin-bottom: 15px;
     padding-bottom: 5px;
