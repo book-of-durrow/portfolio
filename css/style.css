@@ -468,6 +468,10 @@ main {
     padding-left: 1.5em;
 }
 
+.main-content img {
+    width: 100%;
+}
+
 /* サイドバー */
 .sidebar {
     flex: 0 0 30%;
