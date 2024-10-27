@@ -4,10 +4,10 @@
 - path: "/assets/TrpgCharacters/EraForkole/era_forkole_mini.webp"
   caption: "ちびキャラ"
 
-- path: "/assets/TrpgCharacters/EraForkole/era_forkole_00_wink.gif"
+- path: "/assets/TrpgCharacters/EraForkole/era_forkole_00_wink.webp"
   caption: "まばたき"
 
-- path: "/assets/TrpgCharacters/EraForkole/era_forkole_01_magick.gif"
+- path: "/assets/TrpgCharacters/EraForkole/era_forkole_01_magick.webp"
   caption: "魔法"
 
 - path: "/assets/TrpgCharacters/EraForkole/era_forkole_critical.webp"
