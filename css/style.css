@@ -4,6 +4,11 @@
     box-sizing: border-box; /* borderとpaddingを内側に */
 }
 
+::selection {
+    background-color: #364f6f;
+    color: var(--primary-color);
+}
+
 :root {
     --primary-color: #e7dac4;
     --secondary-color: #f26138;
