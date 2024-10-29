@@ -1,0 +1,29 @@
+- path: "/assets/Tarot_00_The_Fool.webp" 
+  alt: "The Fool" 
+
+- path: "/assets/Tarot_01_The_Magician.webp"
+  alt: "The Magician"
+
+- path: "/assets/Tarot_02_The_High_Priestess_blue.webp"
+  alt: "The High Priestess"
+
+- path: "/assets/Tarot_03_The_Empress.webp"
+  alt: "The Empress"
+
+- path: "/assets/Tarot_04_The_Emperor.webp"
+  alt: "The Emperor"
+
+- path: "/assets/Tarot_05_The_Hierophant.webp"
+  alt: "The Hierophant"
+
+- path: "/assets/Tarot_06_The_Lovers_High.webp"
+  alt: "The Lovers"
+
+- path: "/assets/Tarot_07_The_Chariot.webp"
+  alt: "The Chariot"
+
+- path: "/assets/Tarot_08_Strength.webp"
+  alt: "Strength"
+
+- path: "/assets/Tarot_09_The_Hermit.webp"
+  alt: "The Hermit"

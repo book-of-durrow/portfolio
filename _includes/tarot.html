@@ -1,32 +1,11 @@
 <section>
     <div class="gallery">
+        {% assign images = site.data.tarot %}
+        {% for image in images %}
         <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_00_The_Fool.webp" alt="The Fool" style="width: 100%;" class="thumbnail">
+            <img src="{{ site.baseurl }}{{ image.path }}" alt="{{ image.alt }}" style="width: 100%;" class="thumbnail">
         </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_01_The_Magician.webp" alt="The Magician" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_02_The_High_Priestess_blue.webp" alt="The High Priestess" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_03_The_Empress.webp" alt="The Empress" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_04_The_Emperor.webp" alt="The Emperor" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_05_The_Hierophant.webp" alt="The Hierophant" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_06_The_Lovers_High.webp" alt="The Lovers" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_07_The_Chariot.webp" alt="The Chariot" style="width: 100%;" class="thumbnail">
-        </div>
-        <div class="gallery-item">
-            <img src="{{ site.baseurl }}/assets/Tarot_08_Strength.webp" alt="Strength" style="width: 100%;" class="thumbnail">
-        </div>
+        {% endfor %}
     </div>
 </section>
 <div class="modal" id="modal">
