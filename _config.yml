@@ -34,7 +34,8 @@ github_username:  book-of-durrow
 plugins:
   - jekyll-feed
 
-future: true
+future: false
+timezone: Asia/Tokyo
 
 # Exclude from processing.
 # The following items will not be processed, by default.
