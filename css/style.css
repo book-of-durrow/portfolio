@@ -285,7 +285,7 @@ main {
 
 /* 横長画像対応 */
 .gallery-item-autosize {
-    flex-basis: auto;
+    flex: 0 0 auto;
     max-width: 800px;
 }
 
