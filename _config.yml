@@ -34,7 +34,7 @@ github_username:  book-of-durrow
 plugins:
   - jekyll-feed
 
-future: false
+future: true
 timezone: Asia/Tokyo
 
 # Exclude from processing.
