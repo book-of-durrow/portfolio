@@ -470,7 +470,18 @@ main {
 }
 
 .main-content ul {
-    padding-left: 1.5em;
+    padding-left: 1em;
+    margin: 1em 0;
+}
+
+.main-content ol {
+    padding-left: 1em;
+    margin: 1em 0;
+}
+
+.main-content li {
+    font-family: var(--blog-font-family);
+    color: var(--blog-text-color);
 }
 
 .main-content img {
