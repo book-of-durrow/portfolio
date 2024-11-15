@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }} - hisanosis Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-twilight.min.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
+    </head>
+    <body>
+        {% include header.html %}
+        <main>
+            <div class="container">
+                <article class="main-content">
+                    <h1>{{ page.title }}</h1>
+                    <span class="date">{{ page.date | date: "%Y-%m-%d" }}</span>
+                    <p>{{ content }}</p>
+                    <button id="scrollToTop" class="scroll-to-top button">↑ 上に戻る</button>
+                </article>
+
+                <aside class="sidebar card">
+                    <h2>記事一覧</h2>
+
+                    {% assign posts = site.posts | where: "categories", "blender" %}
+                    <ul class="post-list">
+                        {% for post in posts %}
+                        <li>
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+            </div>
+
+            <script src="{{ site.baseurl }}/script/monthToggle.js"></script>
+            <script src="{{ site.baseurl }}/script/scrollTop.js"></script>
+
+            <footer>
+                <p>&copy;2024 hisanosis</p>
+            </footer>
+        </main>
+    </body>
+</html>
