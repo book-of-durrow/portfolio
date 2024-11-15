@@ -2,7 +2,7 @@
 layout: default
 title: エラ・フォルコール
 image: /assets/TrpgCharacters/EraForkole/era_forkole.webp
-name: エラ・フォルコール
+name: <span>エラ・</span><span>フォルコール</span>
 categories: "pc-diffs"
 pos: "style='top: -150px;'"
 ---
