@@ -35,7 +35,6 @@ plugins:
   - jekyll-feed
 
 future: true
-timezone: Asia/Tokyo
 
 # Exclude from processing.
 # The following items will not be processed, by default.
