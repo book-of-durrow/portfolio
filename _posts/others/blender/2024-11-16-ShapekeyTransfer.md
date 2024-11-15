@@ -6,10 +6,6 @@ name: シェイプキー転送
 categories: blender
 ---
 
-{% assign post = site.posts | where: "title", "Blender 備忘録" | first %}
-
-[←{{ post.title }}]({{ post.url | relative_url }})
-
 転送元→転送先の順にオブジェクトを複数選択して、以下のようにシェイプキーの転送を選ぶ。
 
 ![シェイプキーの転送]({{ "/assets/Others/Blender/Blender_ShapekeyTransfer_2411160033.webp" | relative_url }}){:style="max-width: 500px;"}

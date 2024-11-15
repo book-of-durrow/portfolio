@@ -6,9 +6,6 @@ name: アバターのセットアップ/ビルド/テスト
 categories: blender
 ---
 
-{% assign post = site.posts | where: "title", "Blender 備忘録" | first %}
-[←{{ post.title }}]({{ post.url | relative_url }})
-
 1. Armatureの名前とBoneのRootの名前を一致させる。一致してれば名前は何でもいい。{% assign post = site.posts | where: "title", "アドオン" | first %}
 2. MirrorなどのModifierをApplyする。[Apply Modifier]({{ post.url | relative_url }})を利用するとよい。
 3. fbxを出力する。  

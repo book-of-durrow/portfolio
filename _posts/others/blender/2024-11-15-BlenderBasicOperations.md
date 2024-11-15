@@ -6,9 +6,6 @@ name: Blenderの基本操作
 categories: blender
 ---
 
-{% assign post = site.posts | where: "title", "Blender 備忘録" | first %}
-[←{{ post.title }}]({{ post.url | relative_url }})
-
 今のところ使用しているものだけ挙げます。随時更新。
 
 なんにも操作が効かなくなったよお！　というあなたへ→IMEが日本語入力になってませんか？　半角/全角キーを押してみましょう。
@@ -153,6 +150,7 @@ Nを押すと出てくる右側のメニューのviewから、3Dカーソルの�
 3Dカーソルと組み合わせると無限大。
 
 ### Transformation Orientationの追加
+{:id="add-transform-orientation"}
 上の方のアイコンから、Create Transformation Orientationを選ぶと、選択しているコンポーネントをもとに軸を作り出せる。  
 自分はMayaでそのへんのコンポーネントから方向を借りてくるということを結構やってたのだが、それに近いことができる。  
 Mayaと違って複数保存しておけるからなんならもっと便利かも？

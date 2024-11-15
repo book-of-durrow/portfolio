@@ -6,9 +6,6 @@ name: 頭と身体でシェーディングが違う
 categories: blender
 ---
 
-{% assign post = site.posts | where: "title", "Blender 備忘録" | first %}
-[←{{ post.title }}]({{ post.url | relative_url }})
-
 顔と身体でシェーディングが違うのは、オブジェクトが分かれている場合にライトが別々に計算されるため。  
 計算の中心になるポイントを統一すれば解決する。
 
