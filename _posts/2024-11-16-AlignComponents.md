@@ -15,3 +15,5 @@ S→Shift + X→0とかもできる。
 
 {% assign post = site.posts | where: "title", "Blenderの基本操作" | first %}
 [カスタム軸を作っておけば]({{ post.url | relative_url }}#add-transform-orientation)、2点間の直線に対して直線化することもできる。
+
+[LoopToolsのCurveでも可能]({{ site.baseurl }}{% post_url 2024-11-18-LoopTools %}#curve)

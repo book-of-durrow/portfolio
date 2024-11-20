@@ -34,6 +34,7 @@ Regularにチェックを入れていると頂点の平均化も行う。
 x、y、z方向に対してそれぞれ円形をかけるのをやめられる。Mayaの円形化だとこういうことは出来なかった気がする。
 
 ## Curve
+{:id="curve"}
 
 ![Curve]({{ "/assets/Others/Blender/Blender_Curve_2411182223.webp" | relative_url }}){:style="max-width: 500px;"}
 
