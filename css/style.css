@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: 'Georgia', serif;
+    font-family: var(--primary-font-family);
     line-height: 1.6;
     background-color: #111923; /* デフォルト背景色 */
     color: var(--primary-color); /* デフォルト文字色 */
@@ -67,6 +67,11 @@ hr {
 a {
     text-decoration: none;
     color: var(--secondary-color);
+}
+
+blockquote {
+    padding: 8px 16px;
+    margin: 24px 0;
 }
 
 /* ========== ヘッダ ========== */
@@ -470,12 +475,12 @@ main {
 }
 
 .main-content ul {
-    padding-left: 1em;
+    padding-left: 1.5em;
     margin: 1em 0;
 }
 
 .main-content ol {
-    padding-left: 1em;
+    padding-left: 1.5em;
     margin: 1em 0;
 }
 
@@ -486,6 +491,29 @@ main {
 
 .main-content img {
     width: 100%;
+}
+
+.main-content blockquote {
+    position: relative;
+}
+
+.main-content blockquote::before {
+    content: "";
+    background-color: #635e57; 
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-content blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+.main-content th {
+    width: 6em;
+    vertical-align: top;
 }
 
 /* サイドバー */
