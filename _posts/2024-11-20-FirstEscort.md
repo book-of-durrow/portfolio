@@ -42,6 +42,9 @@ categories: hide-posts
 - そこまでの間の護衛をお願いしたい
 - 一人800gpを用意している
 
+![マップ]({{ "/assets/Hidden/TRPG_FirstEscort_Start.webp" | relative_url }})  
+ここの酒場で依頼を受け、下で食料を用意し、上の出口付近の馬車に積み込んで出発する
+
 ### 幌馬車の場所
 馬車は依頼者持ち
 
