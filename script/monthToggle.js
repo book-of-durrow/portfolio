@@ -12,8 +12,6 @@ monthToggles.forEach(toggle => {
             }, 200);
         } else {
             document.querySelectorAll('.post-list').forEach(list => {
-                list.classList.remove('show');
-                list.classList.add('hidden');
                 postList.style.display = 'none';
             });
 
