@@ -639,6 +639,19 @@ code[class*=language-], pre[class*=language-] {
     transform: scale(1.02);
 }
 
+/* ========== 作った曲 ========== */
+.music-description {
+    font-family: var(--blog-font-family);
+    color: var(--blog-text-color);
+    margin: 0;
+    padding: 0 2%;
+    width: 100%;
+}
+
+.mini-img {
+    max-width: 300px;
+}
+
 @media (max-width: 700px) {
     header {
         font-size: 1.5rem;
