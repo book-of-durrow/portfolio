@@ -36,3 +36,6 @@
 
 - path: "/assets/Tarot_12_The_Hanged_Man.webp"
   alt: "The Hanged Man"
+
+- path: "/assets/Tarot_13_Death.webp"
+  alt: "Death"
