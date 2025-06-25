@@ -1,3 +1,9 @@
+- path: "/assets/TrpgCharacters/JamuraKemuru/jamura_kemuru.webp"
+  alt: "蛇村 烟"
+  name: "<p><ruby><rb>蛇村 烟</rb><rp>(</rp><rt>じゃむら けむる</rt><rp>)</rp></ruby></p>"
+  description: "trpg_pc/jamura_kemuru.html"
+  system: "CoC"
+
 - path: "/assets/TrpgCharacters/EraForkole/era_forkole.webp"
   alt: "エラ・フォルコール"
   name: "<p>エラ・フォルコール</p>" 
@@ -8,19 +14,6 @@
   alt: "愛蔵 交"
   name: "<p><ruby><rb>愛蔵 交</rb><rp>(</rp><rt>あいくら かわす</rt><rp>)</rp></ruby></p>"
   description: "trpg_pc/aikura_kawasu.html"
-  system: "CoC"
-
-- path: "/assets/TrpgCharacters/Ajitama/ajita_magou.webp"
-  alt: "味田 真號"
-  name: "<p><ruby><rb>味田 真號</rb><rp>(</rp><rt>あじた まごう</rt><rp>)</rp></ruby></p>"
-  description: "trpg_pc/ajita_magou.html"
-  system: "CoC"
-
-- path: "/assets/TrpgCharacters/AsutoroNaoto/asutoro_naoto.webp"
-  alt: "明日瀞 直人"
-  name:  "<p class='losted-chara'><ruby><rb>明日瀞 直人</rb><rp>(</rp><rt>あすとろ なおと</rt><rp>)</rp></ruby></p>"
-  description: "trpg_pc/asutoro_naoto.html"
-  lost: "<p class='losted'>LOSTED</p>"
   system: "CoC"
 
 - path: "/assets/TrpgCharacters/BandouTen/bandou_ten.webp"
@@ -40,12 +33,6 @@
   alt: "古井戸 ゆん"
   name: "<p><ruby><rb>古井戸 ゆん</rb><rp>(</rp><rt>ふるいど ゆん</rt><rp>)</rp></ruby></p>"
   description: "trpg_pc/furuido_yun.html"
-  system: "CoC"
-
-- path: "/assets/TrpgCharacters/HarinoMushiro/harino_mushiro.webp"
-  alt: "玻璃野 無白"
-  name: "<p><ruby><rb>玻璃野 無白</rb><rp>(</rp><rt>はりの むしろ</rt><rp>)</rp></ruby></p>"
-  description: "trpg_pc/harino_mushiro.html"
   system: "CoC"
 
 - path: "/assets/TrpgCharacters/HarryThousand/harry_thousand.webp"
@@ -126,12 +113,6 @@
   description: "trpg_pc/umikawa_yasushi.html"
   system: "CoC"
 
-- path: "/assets/TrpgCharacters/UsokaraMakoto/usokara_makoto.webp"
-  alt: "鷽唐 誠"
-  name: "<p><ruby><rb>鷽唐 誠</rb><rp>(</rp><rt>うそから まこと</rt><rp>)</rp></ruby></p>"
-  description: "trpg_pc/usokara_makoto.html"
-  system: "CoC"
-
 - path: "/assets/TrpgCharacters/YoidoRei/yoido_rei.gif"
   alt: "宵戸 玲"
   name: "<p class='losted-chara'><ruby><rb>宵戸 玲</rb><rp>(</rp><rt>よいど れい</rt><rp>)</rp></ruby></p>"
@@ -155,3 +136,28 @@
   name: "<p>ジニー・アース</p>"
   description: "trpg_pc/genie_earth.html"
   system: "サイバーパンクRED"
+
+- path: "/assets/TrpgCharacters/Ajitama/ajita_magou.webp"
+  alt: "味田 真號"
+  name: "<p><ruby><rb>味田 真號</rb><rp>(</rp><rt>あじた まごう</rt><rp>)</rp></ruby></p>"
+  description: "trpg_pc/ajita_magou.html"
+  system: "CoC"
+
+- path: "/assets/TrpgCharacters/AsutoroNaoto/asutoro_naoto.webp"
+  alt: "明日瀞 直人"
+  name:  "<p class='losted-chara'><ruby><rb>明日瀞 直人</rb><rp>(</rp><rt>あすとろ なおと</rt><rp>)</rp></ruby></p>"
+  description: "trpg_pc/asutoro_naoto.html"
+  lost: "<p class='losted'>LOSTED</p>"
+  system: "CoC"
+
+- path: "/assets/TrpgCharacters/UsokaraMakoto/usokara_makoto.webp"
+  alt: "鷽唐 誠"
+  name: "<p><ruby><rb>鷽唐 誠</rb><rp>(</rp><rt>うそから まこと</rt><rp>)</rp></ruby></p>"
+  description: "trpg_pc/usokara_makoto.html"
+  system: "CoC"
+
+- path: "/assets/TrpgCharacters/HarinoMushiro/harino_mushiro.webp"
+  alt: "玻璃野 無白"
+  name: "<p><ruby><rb>玻璃野 無白</rb><rp>(</rp><rt>はりの むしろ</rt><rp>)</rp></ruby></p>"
+  description: "trpg_pc/harino_mushiro.html"
+  system: "CoC"
