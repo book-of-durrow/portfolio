@@ -4,6 +4,12 @@
   description: "trpg_pc/jamura_kemuru.html"
   system: "CoC"
 
+- path: "/assets/TrpgCharacters/RileGreenBottle/rile_green_bottle.webp"
+  alt: "ライル・グリーンボトル"
+  name: "<p>ライル・グリーンボトル</p>" 
+  description: "trpg_pc/rile_green_bottle.html"
+  system: "DnD"
+
 - path: "/assets/TrpgCharacters/EraForkole/era_forkole.webp"
   alt: "エラ・フォルコール"
   name: "<p>エラ・フォルコール</p>" 
